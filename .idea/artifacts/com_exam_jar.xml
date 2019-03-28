@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="com.exam:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/com_exam_jar</output-path>
+    <root id="archive" name="com.exam.jar">
+      <element id="module-output" name="com.exam" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
