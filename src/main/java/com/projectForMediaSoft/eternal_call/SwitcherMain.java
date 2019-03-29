@@ -1,5 +1,4 @@
 package com.projectForMediaSoft.eternal_call;
-
 import com.projectForMediaSoft.eternal_call.Vacancy.SwithcerVacancy;
 
 

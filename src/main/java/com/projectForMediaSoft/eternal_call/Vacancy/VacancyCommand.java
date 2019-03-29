@@ -1,11 +1,10 @@
 package com.projectForMediaSoft.eternal_call.Vacancy;
-
 import com.projectForMediaSoft.eternal_call.dataBase.*;
 import java.util.Scanner;
 
 
 /* Реализация работы с вакансиями*/
-public class VacancyMechanic {
+public class VacancyCommand {
 
     /* Создание вакансий в БД*/
     public void createVakans() {

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.exam" />
+        <module name="projectForMediaSoft" />
         <module name="exam" />
       </profile>
     </annotationProcessing>
