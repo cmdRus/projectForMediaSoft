@@ -25,6 +25,7 @@ public class Commands {
                 System.out.println("--------------------------------------------------------------");
             }
             connect.close();
+
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

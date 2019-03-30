@@ -21,7 +21,7 @@ public class VacancyCommand {
         String name = scanner.next();
         System.out.println("Введите описание создаваемой вакансии");
         String duties = scanner2.next();
-        System.out.println("Введите вид рабочей недели, по образцу: *-day working week");
+        System.out.println("Введите вид рабочей недели");
         String conitions = scanner3.next();
         System.out.println("Введите заработную плату");
         int salary = scanner4.nextInt();
@@ -43,19 +43,6 @@ public class VacancyCommand {
         switchVac.swith();
     }
 
-    /* Просмотр всех вакансий в БД*/
-    public void viewVacancy() {
-        System.out.println("Вы выбрали пункт: просмотр всех вакансий");
-        Commands command = new Commands();
-        command.viewVacancy();
-        SwithcerVacancy switchVac = new SwithcerVacancy();
-        switchVac.swith();
-        System.out.println("Хотите выгрузить всё в файл?");
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        switcherWriter(x);
-    }
-
     /* Удаление вакансии*/
     public void delVacancy (){
         System.out.println("Вы выбрали пункт: удаление вакансии");
@@ -67,6 +54,18 @@ public class VacancyCommand {
         System.err.println("Удаление успешно выполенно");
         SwithcerVacancy switchVac = new SwithcerVacancy();
         switchVac.swith();
+    }
+
+    /* Просмотр всех вакансий в БД*/
+    public void viewVacancy() {
+        System.out.println("Вы выбрали пункт: просмотр всех вакансий");
+        Commands command = new Commands();
+        command.viewVacancy();
+        System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
+        System.out.println("В обратном случае, нажмите 2");
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        switcherWriter(x);
     }
 
     /* Свитчер на выбор да/нет, записи вакансий в файл*/
@@ -90,9 +89,6 @@ public class VacancyCommand {
                 System.err.println("Упс. Вы где-то ошиблись");
                 break;
         }
-
-
-
     }
 }
 
