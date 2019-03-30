@@ -7,7 +7,7 @@ import java.util.Scanner;
 /* Реализация запросов к БД, связанных с вакансиями*/
 public class Commands {
 
-    //Создание url, login, password, driverName
+    /* Создание url, login, password, driverName */
     Connect conn = new Connect();
 
     /* (Запрос) Удаление вакансии  */
@@ -125,5 +125,3 @@ public class Commands {
         }
     }
 }
-
-
