@@ -1,5 +1,8 @@
-D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\swithcerVacancy.java
-D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\Vacancy.java
-D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\chooseSpecific.java
-D:\Java\projects\git\projectForMediaSoft\src\main\java\dataBase\jdbc.java
-D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\main.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\Vacancy\SwithcerForVacancy.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\SwitcherMain.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\Vacancy\CommandsForVacancy.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\DataBase\CommandsForDataBase.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\DataBase\ConnectToDataBase.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\Resume\CommandForResume.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\Main.java
+D:\Java\projects\git\projectForMediaSoft\src\main\java\com\projectForMediaSoft\eternal_call\Resume\SwitcherForResume.java

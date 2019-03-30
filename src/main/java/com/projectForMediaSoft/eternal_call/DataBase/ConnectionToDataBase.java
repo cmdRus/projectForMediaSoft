@@ -1,8 +1,8 @@
-package com.projectForMediaSoft.eternal_call.dataBase;
+package com.projectForMediaSoft.eternal_call.DataBase;
 
 
-/* Реализация подключения к БД*/
-public class Connect {
+/* Данные для подключения к БД*/
+public class ConnectionToDataBase {
     private final String driverName = "com.mysql.jdbc.Driver";
     private final String url = "jdbc:mysql://localhost:3306/mediasoft?useSSL=false";
     private final String login = "root";

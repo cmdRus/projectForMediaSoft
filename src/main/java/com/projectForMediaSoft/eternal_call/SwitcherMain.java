@@ -1,5 +1,6 @@
 package com.projectForMediaSoft.eternal_call;
-import com.projectForMediaSoft.eternal_call.Vacancy.SwithcerVacancy;
+import com.projectForMediaSoft.eternal_call.Resume.SwitcherForResume;
+import com.projectForMediaSoft.eternal_call.Vacancy.SwitсherForVacancy;
 
 
 /* Реализация выбора работы с вакансиями или с резюме*/
@@ -7,16 +8,19 @@ public class SwitcherMain {
         public void switcher (int a) {
             switch (a){
                 case (1):{ //Реализация работы с вакансиями
-                    SwithcerVacancy swithcerVac = new SwithcerVacancy();
-                    swithcerVac.swith();
+                    SwitсherForVacancy switcherVac = new SwitсherForVacancy();
+                    switcherVac.switcher();
                     break;
                 }case (2):{ //Реализация работы с резюме
-                    System.err.println("В разработке");
+                    SwitcherForResume switcherRes = new SwitcherForResume();
+                    switcherRes.switcher();
                     break;
                 }case(3):{ //Выход из программы
                     break;
                 }default:
                     System.err.println("Упс. Вы где-то ошиблись");
+                    Main main = new Main();
+                    main.mainer();
                     break;
             }
         }

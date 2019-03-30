@@ -1,5 +1,4 @@
 package com.projectForMediaSoft.eternal_call;
-import com.projectForMediaSoft.eternal_call.Vacancy.*;
 import java.util.Scanner;
 
 
@@ -14,19 +13,26 @@ public class Main {
         System.out.println("Если вы хотите работать с вакансиями, нажмите 1:");
         System.out.println("Если вы хотите работать с резюме соискателей, нажмите 2:");
         System.out.println("Если вы хотите закончить работу программы, нажмите 3:");
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        SwitcherMain switcherMain = new SwitcherMain();
-        switcherMain.switcher(x);
-
+        try{
+            Scanner scanner = new Scanner(System.in);
+            int x = scanner.nextInt();
+            SwitcherMain switcherMain = new SwitcherMain();
+            switcherMain.switcher(x);
+        } catch (Exception e) {
+            System.err.println("Вы ввели не корректное число");
+            mainer();
+            e.printStackTrace();
+        }
     }
-
 }
 
 /*
     * Создание нескольких вакансий, в многопоточности
     * Логирование (работа с БД)
     * Лямба выражение
-    * Выгрузить все резюме в файл
     * Попробовать прикрутить графику
+    *
+    * Сделать работающие обработки резюме +
+    * try/catch вводимые данные (проверка последних)
+    * Изменить ввод рабочей недели (только число, остальное само дописывается)
  */

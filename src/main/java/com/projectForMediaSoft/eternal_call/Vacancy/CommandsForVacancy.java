@@ -1,18 +1,14 @@
 package com.projectForMediaSoft.eternal_call.Vacancy;
-import com.projectForMediaSoft.eternal_call.Main;
-import com.projectForMediaSoft.eternal_call.dataBase.*;
-
-import java.io.FileWriter;
-import java.io.IOException;
+import com.projectForMediaSoft.eternal_call.DataBase.*;
 import java.util.Scanner;
 
 
 /* Реализация работы с вакансиями*/
-public class VacancyCommand {
+public class CommandsForVacancy {
 
     /* Создание вакансий в БД*/
     public void createVakans() {
-        System.out.println("Вы выбрали пункт: создание вакансии");
+        System.out.println("Вы выбрали пункт: Создание вакансии");
         Scanner scanner = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
         Scanner scanner3 = new Scanner(System.in);
@@ -25,44 +21,44 @@ public class VacancyCommand {
         String conitions = scanner3.next();
         System.out.println("Введите заработную плату");
         int salary = scanner4.nextInt();
-        Commands command = new Commands();
+        CommandsForDataBase command = new CommandsForDataBase();
         command.createVacancy(name, duties, conitions, salary);
-        SwithcerVacancy switchVac = new SwithcerVacancy();
-        switchVac.swith();
+        SwitсherForVacancy switchVac = new SwitсherForVacancy();
+        switchVac.switcher();
     }
 
     /* Поиск определенных вакансий в БД*/
     public void findVacancy() {
-        System.out.println("Вы выбрали пункт: поиск определенной вакансии");
+        System.out.println("Вы выбрали пункт: Поиск определенной вакансии");
         System.out.println("Введите вакансию, которую нужно найти");
         Scanner scanner = new Scanner(System.in);
         String vac = scanner.next();
-        Commands command = new Commands();
+        CommandsForDataBase command = new CommandsForDataBase();
         command.findVacancy(vac);
-        SwithcerVacancy switchVac = new SwithcerVacancy();
-        switchVac.swith();
+        SwitсherForVacancy switchVac = new SwitсherForVacancy();
+        switchVac.switcher();
     }
 
     /* Удаление вакансии*/
     public void delVacancy (){
-        System.out.println("Вы выбрали пункт: удаление вакансии");
-        System.out.println("Введите вакансию, которую нужно удалить");
+        System.out.println("Вы выбрали пункт: Удаление вакансии");
+        System.out.println("Введите id вакансии, которое нужно удалить");
         Scanner scanner = new Scanner(System.in);
-        String vac = scanner.next();
-        Commands command = new Commands();
-        command.delVacancy(vac);
+        int id = scanner.nextInt();
+        CommandsForDataBase command = new CommandsForDataBase();
+        command.delVacancy(id);
         System.err.println("Удаление успешно выполенно");
-        SwithcerVacancy switchVac = new SwithcerVacancy();
-        switchVac.swith();
+        SwitсherForVacancy switchVac = new SwitсherForVacancy();
+        switchVac.switcher();
     }
 
     /* Просмотр всех вакансий в БД*/
     public void viewVacancy() {
-        System.out.println("Вы выбрали пункт: просмотр всех вакансий");
-        Commands command = new Commands();
+        System.out.println("Вы выбрали пункт: Просмотр всех вакансий");
+        CommandsForDataBase command = new CommandsForDataBase();
         command.viewVacancy();
-        SwithcerVacancy switchVac = new SwithcerVacancy();
-        switchVac.swith();
+        SwitсherForVacancy switchVac = new SwitсherForVacancy();
+        switchVac.switcher();
     }
 }
 
