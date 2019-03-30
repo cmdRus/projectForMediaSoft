@@ -24,7 +24,7 @@ public class Connect {
         return login;
     }
 
-    public String getdPassword (){
+    public String getPassword (){
         return password;
     }
 }

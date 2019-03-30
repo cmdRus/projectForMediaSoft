@@ -12,12 +12,15 @@ public class VacancyCommand {
     }
 
     /* Поиск определенных вакансий в БД*/
-    public void findVakans() {
+    public void findVacancy() {
         System.out.println("Вы выбрали пункт: поиск определенной вакансии");
+        System.out.println("Введите вакансию, которую нужно найти");
         Scanner scanner = new Scanner(System.in);
         String vac = scanner.next();
         Commands command = new Commands();
-        command.findVakans(vac);
+        command.findVacancy(vac);
+        SwithcerVacancy switchVac = new SwithcerVacancy();
+        switchVac.swith();
     }
 
     /* Просмотр всех вакансий в БД*/
@@ -32,6 +35,14 @@ public class VacancyCommand {
     /* Удаление вакансии*/
     public void delVacancy (){
         System.out.println("Вы выбрали пункт: удаление вакансии");
+        System.out.println("Введите вакансию, которую нужно удалить");
+        Scanner scanner = new Scanner(System.in);
+        String vac = scanner.next();
+        Commands command = new Commands();
+        command.delVacancy(vac);
+        System.err.println("Удаление успешно выполенно");
+        SwithcerVacancy switchVac = new SwithcerVacancy();
+        switchVac.swith();
     }
 }
 

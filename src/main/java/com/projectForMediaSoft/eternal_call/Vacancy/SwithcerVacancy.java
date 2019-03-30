@@ -1,4 +1,6 @@
 package com.projectForMediaSoft.eternal_call.Vacancy;
+import com.projectForMediaSoft.eternal_call.Main;
+import com.projectForMediaSoft.eternal_call.SwitcherMain;
 import com.projectForMediaSoft.eternal_call.dataBase.Commands;
 import java.util.Scanner;
 
@@ -14,6 +16,7 @@ public class SwithcerVacancy {
         System.out.println("Поиск определенной вакансии, нажмите 2");
         System.out.println("Просмотр всех вакансий, нажмите 3");
         System.out.println("Удаление вакансии, нажмите 4");
+        System.out.println("Вернутся в главное меню, нажмите 5");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         switch (x){
@@ -21,13 +24,17 @@ public class SwithcerVacancy {
                 System.err.println("В разработке");
                 break;
             }case (2):{ // Поиск определенной вакансии
-                System.err.println("В разработке");
+                vac.findVacancy();
                 break;
             }case (3):{ //Просмотр всех вакансий
                 vac.viewVacancy();
                 break;
             }case (4):{ //Удаление вакансии
-                System.err.println("В разработке");
+                vac.delVacancy();
+                break;
+            }case (5):{ //Вернутся в главное меню
+                Main main = new Main();
+                main.mainer();
                 break;
             }default:
                 System.err.println("Упс. Вы где-то ошиблись");
