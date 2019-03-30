@@ -1,5 +1,9 @@
 package com.projectForMediaSoft.eternal_call.Vacancy;
+import com.projectForMediaSoft.eternal_call.Main;
 import com.projectForMediaSoft.eternal_call.dataBase.*;
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 
@@ -46,6 +50,10 @@ public class VacancyCommand {
         command.viewVacancy();
         SwithcerVacancy switchVac = new SwithcerVacancy();
         switchVac.swith();
+        System.out.println("Хотите выгрузить всё в файл?");
+        Scanner scanner = new Scanner(System.in);
+        int x = scanner.nextInt();
+        switcherWriter(x);
     }
 
     /* Удаление вакансии*/
@@ -59,6 +67,32 @@ public class VacancyCommand {
         System.err.println("Удаление успешно выполенно");
         SwithcerVacancy switchVac = new SwithcerVacancy();
         switchVac.swith();
+    }
+
+    /* Свитчер на выбор да/нет, записи вакансий в файл*/
+    private void switcherWriter (int x){
+        switch (x){
+            case (1):{
+                try{
+                    FileWriter writer = new FileWriter("Text.txt");
+                    writer.write("Hello");
+                    writer.flush();
+                    writer.close();
+                }catch (IOException ex){
+                    ex.printStackTrace();
+                }
+                break;
+            }case (2):{
+                SwithcerVacancy swithcerVacancy = new SwithcerVacancy();
+                swithcerVacancy.swith();
+                break;
+            }default:
+                System.err.println("Упс. Вы где-то ошиблись");
+                break;
+        }
+
+
+
     }
 }
 
