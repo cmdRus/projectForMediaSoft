@@ -61,34 +61,8 @@ public class VacancyCommand {
         System.out.println("Вы выбрали пункт: просмотр всех вакансий");
         Commands command = new Commands();
         command.viewVacancy();
-        System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
-        System.out.println("В обратном случае, нажмите 2");
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        switcherWriter(x);
-    }
-
-    /* Свитчер на выбор да/нет, записи вакансий в файл*/
-    private void switcherWriter (int x){
-        switch (x){
-            case (1):{
-                try{
-                    FileWriter writer = new FileWriter("Text.txt");
-                    writer.write("Hello");
-                    writer.flush();
-                    writer.close();
-                }catch (IOException ex){
-                    ex.printStackTrace();
-                }
-                break;
-            }case (2):{
-                SwithcerVacancy swithcerVacancy = new SwithcerVacancy();
-                swithcerVacancy.swith();
-                break;
-            }default:
-                System.err.println("Упс. Вы где-то ошиблись");
-                break;
-        }
+        SwithcerVacancy switchVac = new SwithcerVacancy();
+        switchVac.swith();
     }
 }
 

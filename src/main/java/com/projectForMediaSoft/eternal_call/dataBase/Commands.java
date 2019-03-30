@@ -1,4 +1,5 @@
 package com.projectForMediaSoft.eternal_call.dataBase;
+import java.io.*;
 import java.sql.*;
 import java.util.Scanner;
 
@@ -8,30 +9,6 @@ public class Commands {
 
     //Создание url, login, password, driverName
     Connect conn = new Connect();
-
-    /* (Запрос) Просмотр всех вакансий в БД */
-    public void viewVacancy() {
-        try{
-            Class.forName(conn.getdDriverName());
-            Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),conn.getPassword());
-            Statement state = connect.createStatement();
-            ResultSet resSet = state.executeQuery("select * from vacancy");
-            while (resSet.next()){
-                System.out.print(resSet.getInt(1) + " |  ");
-                System.out.print(resSet.getString(2) + " |  ");
-                System.out.print(resSet.getString(3) + " |  ");
-                System.out.print(resSet.getString(4) + " |  ");
-                System.out.println(resSet.getInt(5) + " |  ");
-                System.out.println("--------------------------------------------------------------");
-            }
-            connect.close();
-
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 
     /* (Запрос) Удаление вакансии  */
     public void delVacancy (String vac) {
@@ -88,5 +65,65 @@ public class Commands {
             e.printStackTrace();
         }
     }
+
+    /* (Запрос) Просмотр всех вакансий в БД*/
+    public void viewVacancy() {
+        try{
+            Class.forName(conn.getdDriverName());
+            Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),conn.getPassword());
+            Statement state = connect.createStatement();
+            ResultSet resSet = state.executeQuery("select * from vacancy");
+            while (resSet.next()){
+                System.out.print(resSet.getInt(1) + " |  ");
+                System.out.print(resSet.getString(2) + " |  ");
+                System.out.print(resSet.getString(3) + " |  ");
+                System.out.print(resSet.getString(4) + " |  ");
+                System.out.println(resSet.getInt(5) + " |  ");
+                System.out.println("--------------------------------------------------------------");
+            }
+            writerToFile();
+            connect.close();
+        }catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /* Реализация записи данных в файл*/
+    private void writerToFile() {
+        System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
+        System.out.println("В обратном случае, нажмите 2");
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        if (a==1) {
+            try{
+                Class.forName(conn.getdDriverName());
+                Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),conn.getPassword());
+                Statement state = connect.createStatement();
+                ResultSet resSet = state.executeQuery("select * from vacancy");
+                File fileName = new File("Text.txt");
+                BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+                while (resSet.next()){
+                    writer.write(resSet.getInt(1) + " |  ");
+                        writer.write(resSet.getString(2) + " |  ");
+                        writer.write(resSet.getString(3) + " |  ");
+                        writer.write(resSet.getString(4) + " |  ");
+                        writer.write(resSet.getInt(5) + " |  \n");
+                        writer.write("-------------------------------------------------------------- \n");
+                }
+                writer.flush();
+                writer.close();
+                connect.close();
+            }catch (IOException ex){
+                ex.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
+
 

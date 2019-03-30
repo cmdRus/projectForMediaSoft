@@ -37,27 +37,63 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="mediasoft: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mediasoft@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mediasoft: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="vacancy: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Connect.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="144">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
               <folding>
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/VacancyCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Commands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#delVacancy#0;class#Commands#0" />
+                <element signature="method#findVacancy#0;class#Commands#0" />
+                <element signature="method#createVacancy#0;class#Commands#0" />
+                <element signature="method#viewVacancy#0;class#Commands#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://0e72a9b8-e948-4c1e-8c90-78ac54cee07e/schema/mediasoft/table/vacancy">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -126,14 +162,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/SwitcherMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/VacancyMechanic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/Deducing.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/TableOutPut.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Connect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Main.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/SwithcerVacancy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/Deducing.java" />
+        <option value="$PROJECT_DIR$/Text.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/VacancyCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Commands.java" />
       </list>
     </option>
   </component>
@@ -283,13 +320,13 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2397882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2397882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32718894" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2857143" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2857143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,48 +433,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/Deducing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0e72a9b8-e948-4c1e-8c90-78ac54cee07e/console_2.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0e72a9b8-e948-4c1e-8c90-78ac54cee07e/console_3.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Text.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Commands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0e72a9b8-e948-4c1e-8c90-78ac54cee07e/schema/mediasoft/table/vacancy">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/SwitcherMain.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -456,10 +456,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/VacancyCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        <state relative-caret-position="144">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -468,18 +468,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Connect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="293">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding>
             <element signature="e#385#386#0" expanded="true" />
             <element signature="e#418#419#0" expanded="true" />
             <element signature="e#456#457#0" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
             <element signature="e#607#608#0" expanded="true" />
             <element signature="e#642#643#0" expanded="true" />
             <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/Deducing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/Vacancy/VacancyCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0e72a9b8-e948-4c1e-8c90-78ac54cee07e/schema/mediasoft/table/vacancy">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/projectForMediaSoft/eternal_call/dataBase/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#delVacancy#0;class#Commands#0" />
+            <element signature="method#findVacancy#0;class#Commands#0" />
+            <element signature="method#createVacancy#0;class#Commands#0" />
+            <element signature="method#viewVacancy#0;class#Commands#0" />
           </folding>
         </state>
       </provider>
