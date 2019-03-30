@@ -9,6 +9,22 @@ public class VacancyCommand {
     /* Создание вакансий в БД*/
     public void createVakans() {
         System.out.println("Вы выбрали пункт: создание вакансии");
+        Scanner scanner = new Scanner(System.in);
+        Scanner scanner2 = new Scanner(System.in);
+        Scanner scanner3 = new Scanner(System.in);
+        Scanner scanner4 = new Scanner(System.in);
+        System.out.println("Введите вакансию, которую нужно создать");
+        String name = scanner.next();
+        System.out.println("Введите описание создаваемой вакансии");
+        String duties = scanner2.next();
+        System.out.println("Введите вид рабочей недели, по образцу: *-day working week");
+        String conitions = scanner3.next();
+        System.out.println("Введите заработную плату");
+        int salary = scanner4.nextInt();
+        Commands command = new Commands();
+        command.createVacancy(name, duties, conitions, salary);
+        SwithcerVacancy switchVac = new SwithcerVacancy();
+        switchVac.swith();
     }
 
     /* Поиск определенных вакансий в БД*/

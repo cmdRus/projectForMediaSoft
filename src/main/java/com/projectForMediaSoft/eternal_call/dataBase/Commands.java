@@ -6,7 +6,7 @@ import java.util.Scanner;
 /* Реализация запросов к БД, связанных с вакансиями*/
 public class Commands {
 
-    //Создания URL, Login, password, driverName
+    //Создание url, login, password, driverName
     Connect conn = new Connect();
 
     /* (Запрос) Просмотр всех вакансий в БД */
@@ -22,7 +22,7 @@ public class Commands {
                 System.out.print(resSet.getString(3) + " |  ");
                 System.out.print(resSet.getString(4) + " |  ");
                 System.out.println(resSet.getInt(5) + " |  ");
-                System.out.println("------------------------------------------------");
+                System.out.println("--------------------------------------------------------------");
             }
             connect.close();
         }catch (ClassNotFoundException e) {
@@ -32,13 +32,13 @@ public class Commands {
         }
     }
 
-    /* (Запрос) Поиск вакансии  */
+    /* (Запрос) Удаление вакансии  */
     public void delVacancy (String vac) {
         try{
             Class.forName(conn.getdDriverName());
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),conn.getPassword());
             Statement state = connect.createStatement();
-            String code = "DELETE FROM vacancy WHERE name LIKE '" + vac + "%'" ; //SELECT * FROM topics WHERE id_author=4;
+            String code = "DELETE FROM vacancy WHERE name LIKE '" + vac + "%'";
             state.executeUpdate(code);
             connect.close();
         } catch (ClassNotFoundException e) {
@@ -48,6 +48,7 @@ public class Commands {
         }
     }
 
+    /* (Запрос) Поиск вакансии  */
     public void findVacancy (String vac) {
         try{
             Class.forName(conn.getdDriverName());
@@ -61,8 +62,24 @@ public class Commands {
                 System.out.print(resSet.getString(3)+"   ");
                 System.out.println(resSet.getString(4));
                 System.out.println(resSet.getInt(5) + " |  ");
-                System.out.println("------------------------------------------------");
+                System.out.println("--------------------------------------------------------------");
             }
+            connect.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /* (Запрос) Создание вакансии */
+    public void createVacancy (String nameNew, String dutiesNew, String conditionsNew, int salaryNew) {
+        try{
+            Class.forName(conn.getdDriverName());
+            Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),conn.getPassword());
+            Statement state = connect.createStatement();
+            String code = "INSERT INTO vacancy (name, duties, conditions, salary) VALUES ('"+nameNew + "', '" + dutiesNew + "', '" + conditionsNew + "', '" + salaryNew + "')";
+            state.executeUpdate(code);
             connect.close();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

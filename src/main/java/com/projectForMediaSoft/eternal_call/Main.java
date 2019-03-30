@@ -7,6 +7,7 @@ public class Main {
     public static void main (String[] args) {
         System.out.println("Добро пожаловать в систему поиска и размещения вакансий");
         mainer();
+        System.out.println("Finish program. THX for using ;)");
     }
 
     public static void mainer(){
@@ -17,8 +18,9 @@ public class Main {
         int x = scanner.nextInt();
         SwitcherMain switcherMain = new SwitcherMain();
         switcherMain.switcher(x);
-        System.out.println("Finish program. THX for using ;)");
+
     }
+
 }
 
 /*
