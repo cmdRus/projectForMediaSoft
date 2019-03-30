@@ -9,8 +9,14 @@ public class SwitсherForVacancy {
     public void switcher (){
         CommandsForVacancy comForVac = new CommandsForVacancy();
         this.outForWindow();
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
+        int x = 0;
+        try{
+            Scanner scanner = new Scanner(System.in);
+            x = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("Вы ввели не корректное число");
+            this.switcher();
+        }
         switch (x){
             case (1):{ // Создание вакансии
                 comForVac.createVakans();
@@ -29,7 +35,8 @@ public class SwitсherForVacancy {
                 main.mainer();
                 break;
             }default:
-                System.err.println("Упс. Вы где-то ошиблись");
+                System.out.println("Вы ввели не корректное число");
+                this.switcher();
                 break;
         }
     }

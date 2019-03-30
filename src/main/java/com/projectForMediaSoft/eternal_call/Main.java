@@ -19,9 +19,8 @@ public class Main {
             SwitcherMain switcherMain = new SwitcherMain();
             switcherMain.switcher(x);
         } catch (Exception e) {
-            System.err.println("Вы ввели не корректное число");
+            System.out.println("Вы ввели не корректное число");
             mainer();
-            e.printStackTrace();
         }
     }
 }

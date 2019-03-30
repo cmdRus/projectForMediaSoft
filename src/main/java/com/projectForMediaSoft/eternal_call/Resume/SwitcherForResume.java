@@ -8,8 +8,14 @@ public class SwitcherForResume {
     public void switcher(){
         CommandsForResume comForResume = new CommandsForResume();
         this.outForWindow();
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
+        int x = 0;
+        try{
+            Scanner scanner = new Scanner(System.in);
+            x = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("Вы ввели не корректное число");
+            this.switcher();
+        }
         switch (x){
             case(1):{ // Просмотр всех резюме
                 comForResume.viewResume();
@@ -25,7 +31,8 @@ public class SwitcherForResume {
                 main.mainer();
                 break;
             }default:
-                System.err.println("Упс. Вы где-то ошиблись");
+                System.err.println("Вы ввели не корректное число");
+                this.switcher();
                 break;
         }
     }

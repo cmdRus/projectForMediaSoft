@@ -18,7 +18,7 @@ public class SwitcherMain {
                 }case(3):{ //Выход из программы
                     break;
                 }default:
-                    System.err.println("Упс. Вы где-то ошиблись");
+                    System.out.println("Вы ввели не корректное число");
                     Main main = new Main();
                     main.mainer();
                     break;
