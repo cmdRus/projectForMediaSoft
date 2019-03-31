@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 /* Реализация работы с вакансиями*/
 public class CommandsForVacancy {
+    public CommandsForVacancy() throws IOException {
+    }
 
     /* Создание экземпляра класса, реализующего работу с базой данных*/
     CommandsForDataBase command = new CommandsForDataBase();

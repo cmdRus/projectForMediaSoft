@@ -7,6 +7,8 @@ import java.util.logging.*;
 
 /* Реализация запросов к БД, связанных с вакансиями*/
 public class CommandsForDataBase {
+    public CommandsForDataBase() throws IOException {
+    }
 
     /* Создание url, login, password, driverName */
     ConnectionToDataBase conn = new ConnectionToDataBase();

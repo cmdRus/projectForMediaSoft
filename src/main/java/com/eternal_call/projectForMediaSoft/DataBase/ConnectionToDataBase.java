@@ -1,26 +1,32 @@
 package com.eternal_call.projectForMediaSoft.DataBase;
-
+import java.io.IOException;
 
 /* Данные для подключения к БД*/
 public class ConnectionToDataBase {
+    public ConnectionToDataBase() throws IOException {
+    }
+
     private final String driverName = "com.mysql.jdbc.Driver"; // Определение имени драйвера
-    private static String url = "jdbc:mysql://localhost:3306/mediasoft?useSSL=false";
-    private static String login = "root";
-    private static String password = "BVCdsa45";
+    ReaderCfg readerCfg = new ReaderCfg();
+    private  String url2 = readerCfg.inPutUrl();
+    private  String log2 = readerCfg.inPutLogin();
+    private  String pas2 = readerCfg.inPutPassword();
+
+
 
     public String getdDriverName (){
         return driverName;
     }
 
     public String getdUrl (){
-        return url;
+        return url2;
     }
 
     public String getdLogin (){
-        return login;
+        return log2;
     }
 
     public String getPassword (){
-        return password;
+        return pas2;
     }
 }

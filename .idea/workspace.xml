@@ -55,7 +55,61 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+              <folding>
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#578#579#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#delVacancy#0;class#CommandsForDataBase#0" />
+                <element signature="method#createVacancy#0;class#CommandsForDataBase#0" />
+                <element signature="method#viewVacancy#0;class#CommandsForDataBase#0" />
+                <element signature="method#writerVacToFile#0;class#CommandsForDataBase#0" />
+                <element signature="method#viewResume#0;class#CommandsForDataBase#0" />
+                <element signature="method#writerResToFile#0;class#CommandsForDataBase#0" />
+                <element signature="method#delResume#0;class#CommandsForDataBase#0" />
+                <element signature="e#13758#14761#0" />
+                <element signature="method#findResume#0;class#CommandsForDataBase#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ReaderCfg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#479#487#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,13 +188,13 @@
         <option value="$PROJECT_DIR$/cfg.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ReaderCfg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Vacancy/CommandsForVacancy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/SwitcherMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Vacancy/SwitсherForVacancy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Resume/CommandsForResume.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Resume/SwitcherForResume.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java" />
       </list>
     </option>
   </component>
@@ -191,11 +245,6 @@
             <path>
               <item name="projectForMediaSoft" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectForMediaSoft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectForMediaSoft" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectForMediaSoft" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectForMediaSoft" type="b2602c69:ProjectViewProjectNode" />
@@ -307,6 +356,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -539,16 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/SwitcherMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -579,10 +619,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/SwitcherMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ReaderCfg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="128">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#479#487#0" expanded="true" />
@@ -590,19 +640,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="184">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#delVacancy#0;class#CommandsForDataBase#0" />
+            <element signature="method#createVacancy#0;class#CommandsForDataBase#0" />
+            <element signature="method#viewVacancy#0;class#CommandsForDataBase#0" />
+            <element signature="method#writerVacToFile#0;class#CommandsForDataBase#0" />
+            <element signature="method#viewResume#0;class#CommandsForDataBase#0" />
+            <element signature="method#writerResToFile#0;class#CommandsForDataBase#0" />
+            <element signature="method#delResume#0;class#CommandsForDataBase#0" />
+            <element signature="e#13758#14761#0" />
+            <element signature="method#findResume#0;class#CommandsForDataBase#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="279" column="87" selection-start-line="279" selection-start-column="87" selection-end-line="279" selection-end-column="87" />
+        <state relative-caret-position="176">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
           </folding>
         </state>
       </provider>

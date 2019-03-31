@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 
 public class CommandsForResume {
+    public CommandsForResume() throws IOException {
+    }
 
     /* Создание экземпляра класса, реализующего работу с базой данных*/
     CommandsForDataBase command = new CommandsForDataBase();
