@@ -1,6 +1,6 @@
-package com.projectForMediaSoft.eternal_call;
-import com.projectForMediaSoft.eternal_call.Resume.SwitcherForResume;
-import com.projectForMediaSoft.eternal_call.Vacancy.SwitсherForVacancy;
+package com.eternal_call.projectForMediaSoft;
+import com.eternal_call.projectForMediaSoft.Resume.SwitcherForResume;
+import com.eternal_call.projectForMediaSoft.Vacancy.SwitсherForVacancy;
 
 
 /* Реализация выбора работы с вакансиями или с резюме*/

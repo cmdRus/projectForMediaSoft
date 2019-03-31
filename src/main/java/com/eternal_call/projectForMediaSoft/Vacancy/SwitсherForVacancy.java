@@ -1,5 +1,5 @@
-package com.projectForMediaSoft.eternal_call.Vacancy;
-import com.projectForMediaSoft.eternal_call.Main;
+package com.eternal_call.projectForMediaSoft.Vacancy;
+import com.eternal_call.projectForMediaSoft.Main;
 import java.util.Scanner;
 
 
@@ -10,7 +10,7 @@ public class SwitсherForVacancy {
         CommandsForVacancy comForVac = new CommandsForVacancy();
         this.outForWindow();
         int x = 0;
-        try{
+        try{ //Обработка правильности вводимого значения для выбора работы, с вакансиями
             Scanner scanner = new Scanner(System.in);
             x = scanner.nextInt();
         } catch (Exception e) {
@@ -19,7 +19,7 @@ public class SwitсherForVacancy {
         }
         switch (x){
             case (1):{ // Создание вакансии
-                comForVac.createVakans();
+                comForVac.createVakancy();
                 break;
             }case (2):{ // Поиск определенной вакансии
                 comForVac.findVacancy();

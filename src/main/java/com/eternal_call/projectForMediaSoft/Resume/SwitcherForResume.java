@@ -1,15 +1,16 @@
-package com.projectForMediaSoft.eternal_call.Resume;
-import com.projectForMediaSoft.eternal_call.Main;
+package com.eternal_call.projectForMediaSoft.Resume;
+import com.eternal_call.projectForMediaSoft.Main;
 import java.util.Scanner;
 
 
 public class SwitcherForResume {
 
+    /* Реализация выбора работы, с резюме */
     public void switcher(){
         CommandsForResume comForResume = new CommandsForResume();
         this.outForWindow();
         int x = 0;
-        try{
+        try{ //Обработка правильности вводимого значения для выбора работы, с резюме
             Scanner scanner = new Scanner(System.in);
             x = scanner.nextInt();
         } catch (Exception e) {

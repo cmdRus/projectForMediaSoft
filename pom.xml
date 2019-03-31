@@ -31,7 +31,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.projectForMediaSoft.eternal_call.Main</mainClass>
+                            <mainClass>com.eternal_call.projectForMediaSoft.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
