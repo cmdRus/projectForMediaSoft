@@ -27,7 +27,7 @@ public class CommandsForResume {
         switchRes.switcher();
     }
 
-    /* Поиск определенной вакансии*/
+    /* Поиск определенного резюме*/
     public void findResume(){
         System.out.println("Вы выбрали пункт: Поиск определенного резюме");
         System.out.println("Введите резюме, которое нужно найти");

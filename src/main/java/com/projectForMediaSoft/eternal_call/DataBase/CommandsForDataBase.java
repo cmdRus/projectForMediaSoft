@@ -52,12 +52,12 @@ public class CommandsForDataBase {
     }
 
     /* (Запрос) Создание вакансии */
-    public void createVacancy (String nameNew, String dutiesNew, String conditionsNew, int salaryNew) {
+    public void createVacancy (String nameNew, String dutiesNew, int conditionsNew, int salaryNew) {
         try{
             Class.forName(conn.getdDriverName());
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),conn.getPassword());
             Statement state = connect.createStatement();
-            String code = "INSERT INTO vacancy (name, duties, conditions, salary) VALUES ('"+nameNew + "', '" + dutiesNew + "', '" + conditionsNew + "', '" + salaryNew + "')";
+            String code = "INSERT INTO vacancy (name, duties, hoursInWeek, salary) VALUES ('"+nameNew + "', '" + dutiesNew + "', '" + conditionsNew + "', '" + salaryNew + "')";
             state.executeUpdate(code);
             connect.close();
         } catch (ClassNotFoundException e) {

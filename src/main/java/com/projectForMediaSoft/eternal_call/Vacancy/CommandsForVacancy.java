@@ -17,12 +17,13 @@ public class CommandsForVacancy {
         String name = scanner.next();
         System.out.println("Введите описание создаваемой вакансии");
         String duties = scanner2.next();
-        System.out.println("Введите вид рабочей недели");
-        String conitions = scanner3.next();
+        System.out.println("Введите кол-во часов в неделю (от 1 до 168)");
+        int conitions  = scanner3.nextInt();
         System.out.println("Введите заработную плату");
         int salary = scanner4.nextInt();
         CommandsForDataBase command = new CommandsForDataBase();
         command.createVacancy(name, duties, conitions, salary);
+        System.out.println("Вакансия успешно создана");
         SwitсherForVacancy switchVac = new SwitсherForVacancy();
         switchVac.switcher();
     }
@@ -47,7 +48,7 @@ public class CommandsForVacancy {
         int id = scanner.nextInt();
         CommandsForDataBase command = new CommandsForDataBase();
         command.delVacancy(id);
-        System.err.println("Удаление успешно выполенно");
+        System.out.println("Удаление успешно выполенно");
         SwitсherForVacancy switchVac = new SwitсherForVacancy();
         switchVac.switcher();
     }
@@ -59,6 +60,20 @@ public class CommandsForVacancy {
         command.viewVacancy();
         SwitсherForVacancy switchVac = new SwitсherForVacancy();
         switchVac.switcher();
+    }
+
+    /* Реализация проверки вводимых данных Не используется*/
+    private void compСonitions (int a) {
+        try{
+            if (a > 0){
+                if (a < 168){
+                    System.out.println("Вы ввели верные данные");
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Вы ввели не корректное число");
+            this.createVakans();
+        }
     }
 }
 

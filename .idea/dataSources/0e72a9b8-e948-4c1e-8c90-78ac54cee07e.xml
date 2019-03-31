@@ -1173,9 +1173,9 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="280" name="conditions">
+    <column id="291" parent="280" name="hoursInWeek">
       <Position>4</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>int(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
