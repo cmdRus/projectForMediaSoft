@@ -12,8 +12,6 @@ public class ConnectionToDataBase {
     private  String log2 = readerCfg.inPutLogin();
     private  String pas2 = readerCfg.inPutPassword();
 
-
-
     public String getdDriverName (){
         return driverName;
     }

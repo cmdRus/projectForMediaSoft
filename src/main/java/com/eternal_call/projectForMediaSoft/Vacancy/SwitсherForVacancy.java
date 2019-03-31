@@ -16,7 +16,7 @@ public class SwitсherForVacancy {
     public void switcher () throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
         Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
-        CommandsForVacancy comForVac = new CommandsForVacancy(); // Создание объекта с командами, для работы с вакансиями
+        CommandsForVacancy comForVac = new CommandsForVacancy(); // Создание объекта с командами, для вакансий
         this.outForWindow();
         int x = 0;
         try{ //Обработка правильности вводимого значения для выбора работы, с вакансиями

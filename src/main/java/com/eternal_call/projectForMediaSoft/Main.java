@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Finish program. THX for using ;)");
     }
 
-    /* Реализация главное меню*/
+    /* Реализация главного меню*/
     public static void mainer() throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
         Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
@@ -35,16 +35,4 @@ public class Main {
             mainer();
         }
     }
-
 }
-
-/*
-    * Создание нескольких вакансий, в многопоточности
-    * Логирование (работа с БД + exceptions) +
-    * Лямба выражение
-    * Попробовать прикрутить графику
-    *
-    * Сделать работающие обработки резюме +
-    * try/catch вводимые данные (проверка последних) +
-    * Сделать комментарии во всём проекте +
- */

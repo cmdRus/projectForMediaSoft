@@ -21,9 +21,9 @@ public class CommandsForDataBase {
     /* (Запрос) Удаление вакансии  */
     public void delVacancy (int id) throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
-            Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
+            Handler fileHandlerChanges = new FileHandler(file1,true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
                     conn.getPassword()); // Создание подключения
@@ -44,9 +44,9 @@ public class CommandsForDataBase {
     /* (Запрос) Поиск вакансии  */
     public void findVacancy (String vac) throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
-            Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
+            Handler fileHandlerChanges = new FileHandler(file1,true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
                     conn.getPassword()); // Создание подключения
@@ -75,9 +75,9 @@ public class CommandsForDataBase {
     /* (Запрос) Создание вакансии */
     public void createVacancy (String nameNew, String dutiesNew, int conditionsNew, int salaryNew) throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
-            Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
+            Handler fileHandlerChanges = new FileHandler(file1,true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
                     conn.getPassword()); // Создание подключения
@@ -99,9 +99,9 @@ public class CommandsForDataBase {
     /* (Запрос) Просмотр всех вакансий в БД*/
     public void viewVacancy() throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
-            Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
+            Handler fileHandlerChanges = new FileHandler(file1,true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
                     conn.getPassword()); // Создание подключения
@@ -129,7 +129,7 @@ public class CommandsForDataBase {
     /* Реализация записи вакансий в файл*/
     private void writerVacToFile() throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
         System.out.println("В обратном случае, нажмите 2");
         Scanner scanner = new Scanner(System.in);
@@ -165,9 +165,9 @@ public class CommandsForDataBase {
     /* (Запрос) Просмотр всех резюме в БД*/
     public void viewResume() throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
-            Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
+            Handler fileHandlerChanges = new FileHandler(file1,true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
                     conn.getPassword()); // Создание подключения
@@ -195,7 +195,7 @@ public class CommandsForDataBase {
     /* Реализация записи резюме в файл*/
     private void writerResToFile() throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
         System.out.println("В обратном случае, нажмите 2");
         Scanner scanner = new Scanner(System.in);
@@ -231,10 +231,10 @@ public class CommandsForDataBase {
     /* (Запрос) Удаление резюме  */
     public void delResume (int id) throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
             LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-            Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
+            Handler fileHandlerChanges = new FileHandler(file1,true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
                     conn.getPassword()); // Создание подключения к БД
@@ -255,7 +255,7 @@ public class CommandsForDataBase {
     /* (Запрос) Поиск резюме  */
     public void findResume (String res) throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
-        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
+        Handler fileHandlerException = new FileHandler(file1,true); //Объявление файла для логирования
         try{
             LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования

@@ -5,9 +5,11 @@ import java.util.*;
 
 public class ReaderCfg {
 
+    private static String puthFile = "cfg.txt"; // Путь до файла конфига
+
     /* Считывание данных (url) для подключения из файла*/
     public String inPutUrl() throws IOException {
-        File file = new File("cfg.txt"); //Определение файла, для загрузки данных
+        File file = new File(puthFile); //Определение файла, для загрузки данных
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         List<String> lines = new ArrayList<String>();
@@ -22,7 +24,7 @@ public class ReaderCfg {
 
     /* Считывание данных (login) для подключения из файла*/
     public String inPutLogin() throws IOException {
-        File file = new File("cfg.txt"); //Определение файла, для загрузки данных
+        File file = new File(puthFile); //Определение файла, для загрузки данных
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         List<String> lines = new ArrayList<String>();
@@ -37,7 +39,7 @@ public class ReaderCfg {
 
     /* Считывание данных (password) для подключения из файла*/
     public String inPutPassword() throws IOException {
-        File file = new File("cfg.txt"); //Определение файла, для загрузки данных
+        File file = new File(puthFile); //Определение файла, для загрузки данных
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         List<String> lines = new ArrayList<String>();
