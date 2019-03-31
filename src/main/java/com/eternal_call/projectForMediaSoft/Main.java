@@ -1,12 +1,8 @@
 package com.eternal_call.projectForMediaSoft;
 import com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase;
-
 import java.io.*;
 import java.util.Scanner;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 
 public class Main {
@@ -33,7 +29,7 @@ public class Main {
             int x = scanner.nextInt();
             SwitcherMain switcherMain = new SwitcherMain();
             switcherMain.switcher(x);
-        } catch (Exception e) {
+        } catch (Exception e) { // Обработка логером ошибки
             log.addHandler(fileHandlerException);
             log.info("Вы ввели не корректное значение");
             mainer();
@@ -50,5 +46,5 @@ public class Main {
     *
     * Сделать работающие обработки резюме +
     * try/catch вводимые данные (проверка последних) +
-    * Сделать комментарии во всём проекте
+    * Сделать комментарии во всём проекте +
  */

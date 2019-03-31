@@ -3,10 +3,7 @@ import com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase;
 import com.eternal_call.projectForMediaSoft.Main;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 
 public class SwitсherForVacancy {
@@ -19,7 +16,7 @@ public class SwitсherForVacancy {
     public void switcher () throws IOException {
         LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
         Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
-        CommandsForVacancy comForVac = new CommandsForVacancy();
+        CommandsForVacancy comForVac = new CommandsForVacancy(); // Создание объекта с командами, для работы с вакансиями
         this.outForWindow();
         int x = 0;
         try{ //Обработка правильности вводимого значения для выбора работы, с вакансиями
@@ -47,7 +44,7 @@ public class SwitсherForVacancy {
                 Main main = new Main();
                 main.mainer();
                 break;
-            }default:
+            }default: // Обработка логером ошибки
                 log.addHandler(fileHandlerException);
                 log.info("Вы ввели не корректное значение");
                 this.switcher();

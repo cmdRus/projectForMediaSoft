@@ -34,7 +34,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
@@ -65,7 +65,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
@@ -89,7 +89,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
@@ -119,7 +119,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
@@ -154,7 +154,7 @@ public class CommandsForDataBase {
                 connect.close();
                 log.addHandler(fileHandlerException);
                 log.setLevel(Level.ALL);
-            } catch (ClassNotFoundException | SQLException e) {
+            } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
                 log.log(Level.WARNING, "Fatal ERROR", e);
             }
         }
@@ -185,7 +185,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
@@ -220,7 +220,7 @@ public class CommandsForDataBase {
                 connect.close();
                 log.addHandler(fileHandlerException);
                 log.setLevel(Level.ALL);
-            } catch (ClassNotFoundException | SQLException e) {
+            } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
                 log.log(Level.WARNING, "Fatal ERROR", e);
             }
         }
@@ -245,7 +245,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
@@ -277,7 +277,7 @@ public class CommandsForDataBase {
             connect.close();
             log.addHandler(fileHandlerException);
             log.setLevel(Level.ALL);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) { // Обработка логером ошибки
             log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }

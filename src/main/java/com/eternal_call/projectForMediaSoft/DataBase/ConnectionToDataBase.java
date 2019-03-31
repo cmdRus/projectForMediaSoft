@@ -1,7 +1,5 @@
 package com.eternal_call.projectForMediaSoft.DataBase;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /* Данные для подключения к БД*/
 public class ConnectionToDataBase {

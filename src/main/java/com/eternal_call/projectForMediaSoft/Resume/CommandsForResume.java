@@ -1,6 +1,5 @@
 package com.eternal_call.projectForMediaSoft.Resume;
 import com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase;
-
 import java.io.IOException;
 import java.util.Scanner;
 

@@ -28,7 +28,7 @@ public class SwitcherMain {
                 break;
             }case(3):{ //Выход из программы
                 break;
-            }default:
+            }default: // Обработка логером ошибки
                 log.addHandler(fileHandlerException);
                 log.info("Вы ввели не корректное значение");
                 Main main = new Main();
