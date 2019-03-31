@@ -1,4 +1,4 @@
-1 |  programmer |  Developing programm |  5-day working week |  2500 |  
+1 |  programmer |  Developing programm |  48 |  2500 |  
 -------------------------------------------------------------- 
-2 |  Driver |  Delivery staff |  7-day working week |  1000 |  
+2 |  Driver |  Delivery staff |  36 |  1000 |  
 -------------------------------------------------------------- 

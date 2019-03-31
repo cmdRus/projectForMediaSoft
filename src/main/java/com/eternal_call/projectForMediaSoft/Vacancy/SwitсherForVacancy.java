@@ -1,12 +1,24 @@
 package com.eternal_call.projectForMediaSoft.Vacancy;
+import com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase;
 import com.eternal_call.projectForMediaSoft.Main;
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 
 public class SwitсherForVacancy {
 
+    /* Создание логгера, с получением имени класса*/
+    private static Logger log = Logger.getLogger(CommandsForDataBase.class.getName());
+    static String file1 = "D:/Java/projects/git/projectForMediaSoft/logs/LogExceptions.log"; // Путь файла для логирования ошибок
+
     /* Реализация выбора работы, с вакансиями */
-    public void switcher (){
+    public void switcher () throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         CommandsForVacancy comForVac = new CommandsForVacancy();
         this.outForWindow();
         int x = 0;
@@ -14,7 +26,8 @@ public class SwitсherForVacancy {
             Scanner scanner = new Scanner(System.in);
             x = scanner.nextInt();
         } catch (Exception e) {
-            System.out.println("Вы ввели не корректное число");
+            log.addHandler(fileHandlerException);
+            log.info("Вы ввели не корректное значение");
             this.switcher();
         }
         switch (x){
@@ -35,7 +48,8 @@ public class SwitсherForVacancy {
                 main.mainer();
                 break;
             }default:
-                System.out.println("Вы ввели не корректное число");
+                log.addHandler(fileHandlerException);
+                log.info("Вы ввели не корректное значение");
                 this.switcher();
                 break;
         }

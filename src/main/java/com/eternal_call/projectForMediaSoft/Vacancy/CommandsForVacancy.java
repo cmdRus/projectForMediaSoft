@@ -1,5 +1,7 @@
 package com.eternal_call.projectForMediaSoft.Vacancy;
 import com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 
@@ -10,7 +12,7 @@ public class CommandsForVacancy {
     CommandsForDataBase command = new CommandsForDataBase();
 
     /* Создание вакансии в БД*/
-    public void createVakancy() {
+    public void createVakancy() throws IOException {
         System.out.println("Вы выбрали пункт: Создание вакансии");
         Scanner scanner = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
@@ -30,7 +32,7 @@ public class CommandsForVacancy {
     }
 
     /* Поиск определенных вакансий в БД*/
-    public void findVacancy() {
+    public void findVacancy() throws IOException {
         System.out.println("Вы выбрали пункт: Поиск определенной вакансии");
         System.out.println("Введите вакансию, которую нужно найти");
         Scanner scanner = new Scanner(System.in);
@@ -40,7 +42,7 @@ public class CommandsForVacancy {
     }
 
     /* Удаление вакансии*/
-    public void delVacancy (){
+    public void delVacancy () throws IOException {
         System.out.println("Вы выбрали пункт: Удаление вакансии");
         System.out.println("Введите id вакансии, которое нужно удалить");
         Scanner scanner = new Scanner(System.in);
@@ -50,14 +52,14 @@ public class CommandsForVacancy {
     }
 
     /* Просмотр всех вакансий в БД*/
-    public void viewVacancy() {
+    public void viewVacancy() throws IOException {
         System.out.println("Вы выбрали пункт: Просмотр всех вакансий");
         command.viewVacancy(); //Вызов метода, отвечающего за реализацию просмотра всех вакансий
         this.switcher(); //Возвращение в меню работы с вакансиями
     }
 
     /* Реализация возвращения в меню работы с вакансиями*/
-    private void switcher(){
+    private void switcher() throws IOException {
         SwitсherForVacancy switchVac = new SwitсherForVacancy();
         switchVac.switcher();
     }

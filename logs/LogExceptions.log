@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-03-31T20:13:19</date>
+  <millis>1554048799598</millis>
+  <sequence>1</sequence>
+  <logger>com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase</logger>
+  <level>INFO</level>
+  <class>com.eternal_call.projectForMediaSoft.Main</class>
+  <method>mainer</method>
+  <thread>1</thread>
+  <message>Вы ввели не корректное значение</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-03-31T20:13:39</date>
+  <millis>1554048819194</millis>
+  <sequence>3</sequence>
+  <logger>com.eternal_call.projectForMediaSoft.DataBase.CommandsForDataBase</logger>
+  <level>INFO</level>
+  <class>com.eternal_call.projectForMediaSoft.Main</class>
+  <method>mainer</method>
+  <thread>1</thread>
+  <message>Вы ввели не корректное значение</message>
+</record>
+</log>

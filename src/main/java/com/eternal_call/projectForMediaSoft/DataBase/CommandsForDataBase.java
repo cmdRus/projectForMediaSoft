@@ -14,11 +14,13 @@ public class CommandsForDataBase {
     /* Создание логгера, с получением имени класса*/
     private static Logger log = Logger.getLogger(CommandsForDataBase.class.getName());
     String file1 = "D:/Java/projects/git/projectForMediaSoft/logs/LogChanges.log"; // Путь файла для логирования изменений
+    String file2 = "D:/Java/projects/git/projectForMediaSoft/logs/LogExceptions.log"; // Путь файла для логирования ошибок
 
     /* (Запрос) Удаление вакансии  */
-    public void delVacancy (int id) {
+    public void delVacancy (int id) throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
-            LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
@@ -30,19 +32,18 @@ public class CommandsForDataBase {
             log.info("Удаление пользователя под id = "
                     + id + " успешно выполненно"); // Вывод логгера на экран и в файл
             connect.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 
     /* (Запрос) Поиск вакансии  */
-    public void findVacancy (String vac) {
+    public void findVacancy (String vac) throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
-            LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
@@ -62,19 +63,18 @@ public class CommandsForDataBase {
                 System.out.println("--------------------------------------------------------------");
             }
             connect.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 
     /* (Запрос) Создание вакансии */
-    public void createVacancy (String nameNew, String dutiesNew, int conditionsNew, int salaryNew) {
+    public void createVacancy (String nameNew, String dutiesNew, int conditionsNew, int salaryNew) throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
-            LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
@@ -87,19 +87,18 @@ public class CommandsForDataBase {
             log.info("Создание вакансии с параметрами: " + nameNew + "  " + dutiesNew + "  " + conditionsNew
                     + "  "  + salaryNew + "  " + " успешно выполненно"); // Вывод логгера на экран и в файл
             connect.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 
     /* (Запрос) Просмотр всех вакансий в БД*/
-    public void viewVacancy() {
+    public void viewVacancy() throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
-            LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
@@ -118,17 +117,17 @@ public class CommandsForDataBase {
             }
             writerVacToFile(); // Метод для записи в файл результата
             connect.close();
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 
     /* Реализация записи вакансий в файл*/
-    private void writerVacToFile() {
+    private void writerVacToFile() throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
         System.out.println("В обратном случае, нажмите 2");
         Scanner scanner = new Scanner(System.in);
@@ -153,20 +152,19 @@ public class CommandsForDataBase {
                 writer.flush();
                 writer.close();
                 connect.close();
-            }catch (IOException ex){
-                ex.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }catch (ClassNotFoundException e) {
-                e.printStackTrace();
+                log.addHandler(fileHandlerException);
+                log.setLevel(Level.ALL);
+            } catch (ClassNotFoundException | SQLException e) {
+                log.log(Level.WARNING, "Fatal ERROR", e);
             }
         }
     }
 
     /* (Запрос) Просмотр всех резюме в БД*/
-    public void viewResume() {
+    public void viewResume() throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
-            LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
             Class.forName(conn.getdDriverName()); // Определение имени класса драйвера
             Connection connect = DriverManager.getConnection(conn.getdUrl(), conn.getdLogin(),
@@ -185,17 +183,17 @@ public class CommandsForDataBase {
             }
             writerResToFile(); // Метод для записи в файл результата
             connect.close();
-        }catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 
     /* Реализация записи резюме в файл*/
-    private void writerResToFile() {
+    private void writerResToFile() throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         System.out.println("Хотите выгрузить всё в файл? Нажмите 1");
         System.out.println("В обратном случае, нажмите 2");
         Scanner scanner = new Scanner(System.in);
@@ -220,18 +218,18 @@ public class CommandsForDataBase {
                 writer.flush();
                 writer.close();
                 connect.close();
-            }catch (IOException ex){
-                ex.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }catch (ClassNotFoundException e) {
-                e.printStackTrace();
+                log.addHandler(fileHandlerException);
+                log.setLevel(Level.ALL);
+            } catch (ClassNotFoundException | SQLException e) {
+                log.log(Level.WARNING, "Fatal ERROR", e);
             }
         }
     }
 
     /* (Запрос) Удаление резюме  */
-    public void delResume (int id) {
+    public void delResume (int id) throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
             LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
@@ -245,17 +243,17 @@ public class CommandsForDataBase {
             log.info("Удаление резюме под id = "
                     + id + " успешно выполненно"); // Вывод логгера на экран и в файл
             connect.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 
     /* (Запрос) Поиск резюме  */
-    public void findResume (String res) {
+    public void findResume (String res) throws IOException {
+        LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
+        Handler fileHandlerException = new FileHandler(file1, true); //Объявление файла для логирования
         try{
             LogManager.getLogManager().readConfiguration(); // Чтение конфигурации логирования из файла
             Handler fileHandlerChanges = new FileHandler(file1, true); //Объявление файла для логирования
@@ -277,12 +275,10 @@ public class CommandsForDataBase {
                 System.out.println("--------------------------------------------------------------");
             }
             connect.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
+            log.addHandler(fileHandlerException);
+            log.setLevel(Level.ALL);
+        } catch (ClassNotFoundException | SQLException e) {
+            log.log(Level.WARNING, "Fatal ERROR", e);
         }
     }
 }
