@@ -56,11 +56,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="384">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="34" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#delVacancy#0;class#CommandsForDataBase#0" />
+                <element signature="method#createVacancy#0;class#CommandsForDataBase#0" />
+                <element signature="method#viewVacancy#0;class#CommandsForDataBase#0" />
+                <element signature="method#writerVacToFile#0;class#CommandsForDataBase#0" />
+                <element signature="method#viewResume#0;class#CommandsForDataBase#0" />
+                <element signature="method#writerResToFile#0;class#CommandsForDataBase#0" />
+                <element signature="method#delResume#0;class#CommandsForDataBase#0" />
+                <element signature="method#findResume#0;class#CommandsForDataBase#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -327,13 +359,13 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32718894" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31950846" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31950846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -548,16 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Resume/SwitcherForResume.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -598,25 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="18" column="122" selection-start-line="18" selection-start-column="122" selection-end-line="18" selection-end-column="122" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#delVacancy#0;class#CommandsForDataBase#0" />
-            <element signature="method#createVacancy#0;class#CommandsForDataBase#0" />
-            <element signature="method#viewVacancy#0;class#CommandsForDataBase#0" />
-            <element signature="method#writerVacToFile#0;class#CommandsForDataBase#0" />
-            <element signature="method#viewResume#0;class#CommandsForDataBase#0" />
-            <element signature="method#writerResToFile#0;class#CommandsForDataBase#0" />
-            <element signature="method#delResume#0;class#CommandsForDataBase#0" />
-            <element signature="e#13758#14761#0" />
-            <element signature="method#findResume#0;class#CommandsForDataBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ReaderCfg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
@@ -630,8 +633,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/ConnectionToDataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="384">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eternal_call/projectForMediaSoft/DataBase/CommandsForDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#delVacancy#0;class#CommandsForDataBase#0" />
+            <element signature="method#createVacancy#0;class#CommandsForDataBase#0" />
+            <element signature="method#viewVacancy#0;class#CommandsForDataBase#0" />
+            <element signature="method#writerVacToFile#0;class#CommandsForDataBase#0" />
+            <element signature="method#viewResume#0;class#CommandsForDataBase#0" />
+            <element signature="method#writerResToFile#0;class#CommandsForDataBase#0" />
+            <element signature="method#delResume#0;class#CommandsForDataBase#0" />
+            <element signature="method#findResume#0;class#CommandsForDataBase#0" />
+          </folding>
         </state>
       </provider>
     </entry>
